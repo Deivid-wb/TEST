@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cerofinal(err,n){
+    let count = 0;
+
+    for(let i = 0; i < n; i++ )
+        if (arr[i] !=0)
+         arr[count++] = arr[i];
+
+         while (count < n)
+         arr[count++] = 0;
+         
+}
+let arr = [4, 8, 0, 9, 2, 5, 0, 3, 3, 0];
+arr.push(4);
+let suma = 0;
+let n = arr.length;
+cerofinal(arr,n);
+document.write("Matriz ordenado:<br>");
+for(let i = 0; i < n; i++)
+
+// ordena los ceros al final  
+//document.write(arr[i]+"");
+
+
+
+document.write(arr[i]+"");
+for(let i of arr) suma+=i;
+document.write("<br> La Suma es:<br>"+suma);
+
+    </script>
+</body>
+</html>
